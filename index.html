@@ -1,145 +1,236 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt-AO">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Arão Lende Webdesign | Criação de sites em Angola</title>
-<meta name="description" content="Criação de sites profissionais para oficinas, salões, lojas e empresas em Angola. Design moderno, optimizado para o Google, com contacto directo por WhatsApp. Peça orçamento sem compromisso.">
-<meta property="og:title" content="Arão Lende Webdesign">
-<meta property="og:description" content="Sites profissionais para o seu negócio em Angola. Orçamento sem compromisso pelo WhatsApp 929 966 303.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Arão Lende Webdesign | Sites inovadores e animados em Angola</title>
+<meta name="description" content="Criação de sites inovadores e animados para negócios em Luanda e Angola. Botão directo para WhatsApp, aparece no Google. Orçamento sem compromisso: 929 966 303.">
+<meta name="theme-color" content="#0a0a0a">
 <meta property="og:type" content="website">
+<meta property="og:title" content="Sem site, sem clientes novos. | Arão Lende Webdesign">
+<meta property="og:description" content="Sites inovadores e animados para o seu negócio em Angola. Peça o seu orçamento no WhatsApp.">
 <meta property="og:locale" content="pt_AO">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23111'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='700' font-size='26' text-anchor='middle' fill='%23fff'%3EAL%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#F1F4F8;color:#0A1B33;font-family:'Instrument Sans',system-ui,sans-serif}
-a{color:inherit}
-.cta:hover{filter:brightness(1.06)}
-.cta:focus-visible{outline:3px solid #0A1B33;outline-offset:3px}
-h1,h2,h3{text-wrap:balance}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;background:#0a0a0a;color:#f2f2f2;line-height:1.5;overflow-x:hidden;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(900px 600px at 15% 0%,#262626,transparent 60%),radial-gradient(800px 700px at 100% 60%,#1d1d1d,transparent 60%),#0a0a0a}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.orbs{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;background:radial-gradient(circle at 30% 30%,#e8e8e8,#6b6b6b 55%,#111);opacity:.85;filter:blur(.5px);will-change:transform;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.orb i{display:block;width:100%;height:100%;border-radius:50%;animation:float 9s ease-in-out infinite}
+.o1{width:260px;height:260px;right:-90px;top:12vh}
+.o2{width:200px;height:200px;left:-80px;top:62vh}
+.o3{width:150px;height:150px;right:8vw;bottom:-60px}
+.o2 i{animation-delay:-3s}.o3 i{animation-delay:-6s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-22px)}}
+.glass{border-radius:32px;padding:28px;background:linear-gradient(135deg,rgba(255,255,255,.17),rgba(255,255,255,.05) 55%,rgba(255,255,255,.10));border:1.5px solid rgba(255,255,255,.3);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);box-shadow:inset 0 2px 0 rgba(255,255,255,.45),0 24px 50px rgba(0,0,0,.4);position:relative;overflow:hidden}
+.glass:after{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),rgba(255,255,255,.2),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.glass.touch:after{opacity:1}
+.tilt{transition:transform .25s ease;transform-style:preserve-3d}
+nav{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:50;width:calc(100% - 24px);max-width:720px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px 8px 8px;border-radius:999px;background:rgba(30,30,30,.55);border:1.5px solid rgba(255,255,255,.25);-webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px);box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 10px 30px rgba(0,0,0,.4)}
+.mark{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:15px;background:linear-gradient(135deg,rgba(255,255,255,.3),rgba(255,255,255,.08));border:1.5px solid rgba(255,255,255,.4)}
+nav ul{display:flex;gap:4px;list-style:none}
+nav ul a{display:block;padding:8px 14px;border-radius:999px;font-size:14px;color:#ccc;transition:.2s}
+nav ul a:active,nav ul a:hover{background:rgba(255,255,255,.15);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;background:linear-gradient(135deg,#fff,#cfcfcf);color:#0a0a0a;border:0;box-shadow:inset 0 2px 0 #fff,0 10px 30px rgba(255,255,255,.18);transition:transform .15s,box-shadow .2s;position:relative;overflow:hidden;cursor:pointer}
+.btn:active{transform:scale(.94)}
+.btn.sm{padding:10px 18px;font-size:13px}
+.btn.ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.35);box-shadow:inset 0 1px 0 rgba(255,255,255,.4)}
+.ripple{position:absolute;border-radius:50%;background:rgba(120,120,120,.35);transform:scale(0);animation:rip .6s ease-out forwards;pointer-events:none}
+@keyframes rip{to{transform:scale(4);opacity:0}}
+@media(max-width:560px){nav ul a{padding:8px 9px;font-size:13px}nav .btn{display:none}}
+header.hero{padding:130px 0 70px;text-align:center}
+.search{max-width:520px;margin:0 auto 18px;padding:14px 20px;border-radius:999px;display:flex;align-items:center;gap:12px;text-align:left;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.32);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);box-shadow:inset 0 2px 0 rgba(255,255,255,.4)}
+.mag{width:18px;height:18px;border:2.5px solid #ddd;border-radius:50%;position:relative;flex:none}
+.mag:after{content:"";position:absolute;width:3px;height:9px;background:#ddd;right:-5px;bottom:-8px;transform:rotate(-45deg);border-radius:2px}
+.typed{font-size:16px;color:#eee;min-height:24px}
+.typed:after{content:"|";animation:blink 1s infinite;margin-left:1px;color:#999}
+@keyframes blink{50%{opacity:0}}
+.noresult{max-width:520px;margin:0 auto 34px;padding:18px 22px;border-radius:24px;text-align:left;font-size:15px;color:#ccc;opacity:0;transform:translateY(12px) scale(.97);transition:.6s cubic-bezier(.2,.8,.2,1)}
+.noresult.on{opacity:1;transform:none}
+.noresult b{color:#fff}
+h1{font-size:clamp(40px,10vw,84px);line-height:1.04;font-weight:700;letter-spacing:-.02em}
+h1 span{font-weight:300;color:#cfcfcf;display:block}
+.sub{max-width:560px;margin:22px auto 30px;font-size:clamp(16px,2.4vw,19px);color:#bbb;font-weight:300}
+.sub b{color:#fff;font-weight:500}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+section{padding:60px 0}
+.tag{display:inline-block;padding:6px 16px;border-radius:999px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);color:#ddd;margin-bottom:14px}
+h2{font-size:clamp(28px,6vw,46px);font-weight:600;line-height:1.1;letter-spacing:-.015em;margin-bottom:12px}
+.lead{color:#aaa;font-weight:300;max-width:560px;margin-bottom:34px}
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.glass h3{font-size:19px;font-weight:600;margin:12px 0 6px}
+.glass p{color:#bbb;font-size:15px;font-weight:300}
+.ic{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;font-size:22px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3)}
+.step .n{font-size:44px;font-weight:300;color:#777}
+.plans{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));align-items:stretch}
+.plan{display:flex;flex-direction:column}
+.plan h3{margin-top:0;font-size:22px}
+.price{font-size:40px;font-weight:700;letter-spacing:-.02em;margin:8px 0 2px}
+.price small{font-size:15px;font-weight:300;color:#aaa;letter-spacing:0}
+.plan ul{list-style:none;margin:16px 0 22px;display:grid;gap:10px;flex:1}
+.plan li{font-size:15px;color:#ddd;font-weight:300;padding-left:26px;position:relative}
+.plan li:before{content:"✓";position:absolute;left:0;color:#fff;font-weight:600}
+.feat{background:linear-gradient(135deg,rgba(255,255,255,.28),rgba(255,255,255,.09) 55%,rgba(255,255,255,.18));border-color:rgba(255,255,255,.55)}
+.pill{position:absolute;top:18px;right:18px;background:#fff;color:#0a0a0a;font-size:12px;font-weight:600;padding:5px 12px;border-radius:999px}
+.strip{margin-top:18px;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.strip .glass{padding:22px 26px}
+.strip strong{font-size:18px;font-weight:600}
+.contact{text-align:center}
+.contact .glass{padding:44px 24px}
+.nums{display:grid;gap:12px;max-width:420px;margin:26px auto 0}
+.nums a{padding:16px 22px;border-radius:22px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.3);display:flex;justify-content:space-between;align-items:center;transition:transform .15s,background .2s;text-align:left}
+.nums a:active{transform:scale(.96);background:rgba(255,255,255,.2)}
+.nums b{font-size:20px;font-weight:600;display:block}
+.nums span{font-size:13px;color:#aaa;font-weight:300}
+footer{padding:30px 0 110px;text-align:center;color:#777;font-size:13px;letter-spacing:.1em}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:60;display:flex;align-items:center;gap:10px;padding:14px 20px;border-radius:999px;background:linear-gradient(135deg,#fff,#d4d4d4);color:#0a0a0a;font-weight:600;font-size:14px;box-shadow:0 12px 34px rgba(0,0,0,.5),0 0 0 0 rgba(255,255,255,.5);animation:pulse 2.4s infinite;transition:transform .15s}
+.fab:active{transform:scale(.93)}
+@keyframes pulse{70%{box-shadow:0 12px 34px rgba(0,0,0,.5),0 0 0 18px rgba(255,255,255,0)}100%{box-shadow:0 12px 34px rgba(0,0,0,.5),0 0 0 0 rgba(255,255,255,0)}}
+.rv{opacity:0;transform:translateY(34px) scale(.97);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.bar{position:fixed;top:0;left:0;height:3px;width:0;background:#fff;z-index:100;box-shadow:0 0 12px #fff}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<div style="width:100%;box-sizing:border-box;display:flex;flex-direction:column;font-family:'Instrument Sans',system-ui,sans-serif;color:#0A1B33;background:#F1F4F8">
+<div class="bar" id="bar"></div>
+<div class="orbs" aria-hidden="true">
+  <div class="orb o1" data-s="30"><i></i></div>
+  <div class="orb o2" data-s="-22"><i></i></div>
+  <div class="orb o3" data-s="16"><i></i></div>
+</div>
 
-<header style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;max-width:1160px;width:100%;box-sizing:border-box;margin:0 auto">
-<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;letter-spacing:-0.01em">Arão Lende<span style="font-weight:500;color:#52627A"> · Webdesign</span></div>
-<nav style="display:flex;flex-wrap:wrap;gap:22px;font-size:15px;font-weight:500">
-<a href="#servicos" style="text-decoration:none">Serviços</a>
-<a href="#como-funciona" style="text-decoration:none">Como funciona</a>
-<a href="#contacto" style="text-decoration:none">Contacto</a>
+<nav>
+  <a href="#topo" class="mark" aria-label="Início">AL</a>
+  <ul>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#precos">Preços</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a class="btn sm" href="https://wa.me/244929966303?text=Ol%C3%A1%20Ar%C3%A3o%2C%20quero%20um%20or%C3%A7amento%20para%20o%20meu%20site." target="_blank" rel="noopener">WhatsApp</a>
 </nav>
-</header>
 
-<section style="display:flex;flex-wrap:wrap;align-items:center;gap:48px 56px;padding:56px 24px 72px;max-width:1160px;width:100%;box-sizing:border-box;margin:0 auto">
-<div style="flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:24px">
-<div style="font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#52627A">Criação de sites em Angola</div>
-<h1 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-0.025em">Quem procura no Google tem de encontrar o seu negócio.</h1>
-<p style="margin:0;font-size:19px;line-height:1.55;max-width:520px;color:#2B3B54">Crio o site profissional da sua oficina, salão, loja ou empresa. Funciona no telemóvel, aparece nas pesquisas e leva os clientes directamente ao seu WhatsApp.</p>
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 20px">
-<a class="cta" href="https://wa.me/244929966303" style="display:inline-block;background:#E2AE3C;color:#0A1B33;text-decoration:none;font-weight:600;font-size:17px;padding:16px 26px;border-radius:6px;min-height:20px">Pedir orçamento no WhatsApp</a>
-<span style="font-size:16px;color:#2B3B54">ou ligue: <strong style="font-variant-numeric:tabular-nums;user-select:all">929 966 303</strong></span>
-</div>
-</div>
+<main id="topo">
+<header class="hero"><div class="wrap">
+  <div class="search rv"><span class="mag"></span><span class="typed" id="typed"></span></div>
+  <div class="glass noresult" id="nores"><b>Nenhum resultado.</b> Os clientes procuram no Google e não encontram o seu negócio.</div>
+  <h1 class="rv d1">Sem site,<span>sem clientes novos.</span></h1>
+  <p class="sub rv d2">Crio o seu <b>site inovador e animado</b>, com botão directo para o seu WhatsApp.</p>
+  <div class="cta rv d3">
+    <a class="btn" href="https://wa.me/244929966303?text=Ol%C3%A1%20Ar%C3%A3o%2C%20quero%20um%20or%C3%A7amento%20para%20o%20meu%20site." target="_blank" rel="noopener">Peça o seu orçamento</a>
+    <a class="btn ghost" href="#precos">Ver preços</a>
+  </div>
+</div></header>
 
-<div style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:12px">
-<div style="background:#FFFFFF;border:1px solid #D3DBE6;border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:18px;box-shadow:0 18px 40px -22px rgba(10,27,51,0.35)">
-<div style="border:1px solid #D3DBE6;border-radius:999px;padding:11px 18px;font-size:15px;color:#2B3B54">oficina mecânica em Luanda</div>
-<div style="display:flex;flex-direction:column;gap:4px">
-<div style="font-size:13px;color:#52627A">suaoficina.ao</div>
-<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;color:#1B4FA3;line-height:1.2">Sua Oficina | Mecânica multimarcas em Luanda</div>
-<div style="font-size:14.5px;line-height:1.5;color:#2B3B54">Revisões, travões, electricidade auto e diagnóstico. Horário, morada no mapa e pedido de orçamento pelo WhatsApp.</div>
-</div>
-<div style="height:1px;background:#E3E9F1"></div>
-<div style="display:flex;flex-direction:column;gap:8px;opacity:0.55">
-<div style="height:10px;width:38%;background:#C9D3E0;border-radius:3px"></div>
-<div style="height:14px;width:82%;background:#C9D3E0;border-radius:3px"></div>
-<div style="height:10px;width:70%;background:#DCE3EC;border-radius:3px"></div>
-</div>
-</div>
-<div style="font-size:13px;color:#52627A">Exemplo ilustrativo de como o seu negócio pode aparecer.</div>
-</div>
-</section>
+<section id="servicos"><div class="wrap">
+  <span class="tag rv">Serviços</span>
+  <h2 class="rv">Tudo o que o seu negócio precisa para aparecer.</h2>
+  <p class="lead rv">Sites rápidos, bonitos e feitos para o telemóvel, onde estão os seus clientes.</p>
+  <div class="grid g3">
+    <div class="glass tilt rv"><div class="ic">📱</div><h3>Funciona em qualquer ecrã</h3><p>Telemóvel, tablet e computador, sempre com ar profissional.</p></div>
+    <div class="glass tilt rv d1"><div class="ic">💬</div><h3>Botão de WhatsApp</h3><p>O cliente toca e fala consigo na hora. Mais pedidos, menos perda de tempo.</p></div>
+    <div class="glass tilt rv d2"><div class="ic">🔎</div><h3>Aparece no Google</h3><p>Optimizado para o seu negócio ser encontrado em Luanda e em Angola.</p></div>
+    <div class="glass tilt rv"><div class="ic">✨</div><h3>Animações modernas</h3><p>Efeitos suaves ao toque que fazem o seu site parecer de uma grande marca.</p></div>
+    <div class="glass tilt rv d1"><div class="ic">🛒</div><h3>Loja e catálogo</h3><p>Produtos, pesquisa e pedido directo pelo WhatsApp.</p></div>
+    <div class="glass tilt rv d2"><div class="ic">🛠️</div><h3>Suporte e manutenção</h3><p>Acompanho o seu site depois de publicado, sem dores de cabeça.</p></div>
+  </div>
+</div></section>
 
-<section id="servicos" style="background:#FFFFFF;border-block:1px solid #DDE4EE">
-<div style="padding:72px 24px;max-width:1160px;width:100%;box-sizing:border-box;margin:0 auto;display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:12px;max-width:640px">
-<h2 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(30px,4.2vw,44px);line-height:1.08;letter-spacing:-0.02em">O que o seu site inclui</h2>
-<p style="margin:0;font-size:17px;line-height:1.55;color:#2B3B54">Tudo o que um cliente precisa para o encontrar, confiar e contactar.</p>
-</div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
-<div style="display:flex;flex-direction:column;gap:8px;padding:24px;border:1px solid #DDE4EE;border-radius:8px;background:#F1F4F8">
-<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px">Design moderno e responsivo</h3>
-<p style="margin:0;font-size:16px;line-height:1.5;color:#2B3B54">Fica bem no computador, no tablet e no telemóvel, onde a maioria dos seus clientes vai abrir o site.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:8px;padding:24px;border:1px solid #DDE4EE;border-radius:8px;background:#F1F4F8">
-<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px">Optimização para o Google (SEO)</h3>
-<p style="margin:0;font-size:16px;line-height:1.5;color:#2B3B54">Estruturado para o seu negócio aparecer quando alguém pesquisa o seu serviço na sua cidade.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:8px;padding:24px;border:1px solid #DDE4EE;border-radius:8px;background:#F1F4F8">
-<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px">Rápido e seguro</h3>
-<p style="margin:0;font-size:16px;line-height:1.5;color:#2B3B54">Páginas leves que abrem depressa, mesmo com internet lenta, e com protecção de segurança.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:8px;padding:24px;border:1px solid #DDE4EE;border-radius:8px;background:#F1F4F8">
-<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px">Fácil de navegar</h3>
-<p style="margin:0;font-size:16px;line-height:1.5;color:#2B3B54">Serviços, preços e contactos onde o cliente espera encontrá-los, sem se perder.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:8px;padding:24px;border:1px solid #DDE4EE;border-radius:8px;background:#F1F4F8">
-<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px">Formulário de contacto e mapa</h3>
-<p style="margin:0;font-size:16px;line-height:1.5;color:#2B3B54">Os clientes veem onde fica, enviam o pedido e falam consigo pelo WhatsApp.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:8px;padding:24px;border:1px solid #DDE4EE;border-radius:8px;background:#F1F4F8">
-<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px">Suporte inicial</h3>
-<p style="margin:0;font-size:16px;line-height:1.5;color:#2B3B54">Acompanho o arranque do site e ajudo com as primeiras dúvidas e ajustes.</p>
-</div>
-</div>
-</div>
-</section>
+<section id="como"><div class="wrap">
+  <span class="tag rv">Como funciona</span>
+  <h2 class="rv">Três passos simples.</h2>
+  <div class="grid g3" style="margin-top:26px">
+    <div class="glass tilt step rv"><div class="n">01</div><h3>Conversamos</h3><p>Fala-me do negócio, das fotos e do que quer no site.</p></div>
+    <div class="glass tilt step rv d1"><div class="n">02</div><h3>Eu crio</h3><p>Mostro-lhe o resultado e ajustamos até ficar como imaginou.</p></div>
+    <div class="glass tilt step rv d2"><div class="n">03</div><h3>Publicamos</h3><p>O site fica online e os clientes começam a encontrá-lo.</p></div>
+  </div>
+</div></section>
 
-<section id="como-funciona" style="padding:72px 24px;max-width:1160px;width:100%;box-sizing:border-box;margin:0 auto;display:flex;flex-direction:column;gap:40px">
-<h2 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(30px,4.2vw,44px);line-height:1.08;letter-spacing:-0.02em;max-width:640px">Do primeiro contacto ao site no ar</h2>
-<div style="display:flex;flex-wrap:wrap;gap:28px">
-<div style="flex:1 1 260px;min-width:0;display:flex;flex-direction:column;gap:10px;border-top:3px solid #0A1B33;padding-top:18px">
-<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:15px;color:#52627A;letter-spacing:0.08em;text-transform:uppercase">Passo 1</div>
-<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:23px">Fala comigo no WhatsApp</h3>
-<p style="margin:0;font-size:16px;line-height:1.5;color:#2B3B54">Conta-me o que o seu negócio faz e o que quer que o site mostre.</p>
-</div>
-<div style="flex:1 1 260px;min-width:0;display:flex;flex-direction:column;gap:10px;border-top:3px solid #0A1B33;padding-top:18px">
-<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:15px;color:#52627A;letter-spacing:0.08em;text-transform:uppercase">Passo 2</div>
-<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:23px">Recebe o orçamento</h3>
-<p style="margin:0;font-size:16px;line-height:1.5;color:#2B3B54">Proposta clara, sem compromisso. Só avança se concordar.</p>
-</div>
-<div style="flex:1 1 260px;min-width:0;display:flex;flex-direction:column;gap:10px;border-top:3px solid #E2AE3C;padding-top:18px">
-<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:15px;color:#52627A;letter-spacing:0.08em;text-transform:uppercase">Passo 3</div>
-<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:23px">O site fica no ar</h3>
-<p style="margin:0;font-size:16px;line-height:1.5;color:#2B3B54">Crio, mostro-lhe e ajusto até ficar como queria. Depois publico e acompanho o arranque.</p>
-</div>
-</div>
-</section>
+<section id="precos"><div class="wrap">
+  <span class="tag rv">Tabela de preços</span>
+  <h2 class="rv">Preços claros, sem surpresas.</h2>
+  <p class="lead rv">Sites inovadores e animados para o seu negócio.</p>
+  <div class="plans">
+    <div class="glass plan tilt rv">
+      <h3>Básico</h3>
+      <div class="price"><span class="cnt" data-to="50000">50.000</span> <small>Kz</small></div>
+      <ul><li>Página única com serviços e preços</li><li>Botão de WhatsApp e mapa</li><li>Funciona no telemóvel e no computador</li><li>Domínio incluído no 1.º ano</li></ul>
+      <a class="btn ghost" href="https://wa.me/244929966303?text=Ol%C3%A1%2C%20quero%20o%20plano%20B%C3%A1sico." target="_blank" rel="noopener">Escolher Básico</a>
+    </div>
+    <div class="glass plan feat tilt rv d1">
+      <span class="pill">Mais escolhido</span>
+      <h3>Profissional</h3>
+      <div class="price"><span class="cnt" data-to="80000">80.000</span> <small>Kz</small></div>
+      <ul><li>Tudo do Básico</li><li>Animações e galeria de fotos</li><li>Optimizado para aparecer no Google</li><li>Formulário de contacto e suporte inicial</li></ul>
+      <a class="btn" href="https://wa.me/244929966303?text=Ol%C3%A1%2C%20quero%20o%20plano%20Profissional." target="_blank" rel="noopener">Escolher Profissional</a>
+    </div>
+    <div class="glass plan tilt rv d2">
+      <h3>Loja / Catálogo</h3>
+      <div class="price"><small>desde</small> <span class="cnt" data-to="150000">150.000</span> <small>Kz</small></div>
+      <ul><li>Tudo do Profissional</li><li>Produtos com filtros de pesquisa</li><li>Carrinho com pedido pelo WhatsApp</li></ul>
+      <a class="btn ghost" href="https://wa.me/244929966303?text=Ol%C3%A1%2C%20quero%20uma%20Loja%20ou%20Cat%C3%A1logo." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+  <div class="strip">
+    <div class="glass tilt rv"><strong>Manutenção anual</strong><p>15.000 – 20.000 Kz/ano</p></div>
+    <div class="glass tilt rv d1"><strong>Pagamento</strong><p>50% no início e 50% na entrega. Orçamento sem compromisso.</p></div>
+  </div>
+</div></section>
 
-<section id="contacto" style="background:#0A1B33;color:#FFFFFF">
-<div style="padding:72px 24px;max-width:1160px;width:100%;box-sizing:border-box;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:36px 56px">
-<div style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:16px">
-<h2 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(32px,4.8vw,52px);line-height:1.05;letter-spacing:-0.02em">Peça o seu orçamento sem compromisso.</h2>
-<p style="margin:0;font-size:18px;line-height:1.55;color:#C5D0E0;max-width:520px">Envie uma mensagem a dizer o nome do seu negócio e respondo com uma proposta para o seu site.</p>
-</div>
-<div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:18px">
-<a class="cta" href="https://wa.me/244929966303" style="display:inline-block;align-self:flex-start;background:#E2AE3C;color:#0A1B33;text-decoration:none;font-weight:600;font-size:18px;padding:18px 28px;border-radius:6px">Abrir conversa no WhatsApp</a>
-<div style="display:flex;flex-direction:column;gap:4px">
-<div style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#9FB0C7">WhatsApp e telefone</div>
-<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:38px;font-variant-numeric:tabular-nums;user-select:all">929 966 303</div>
-</div>
-</div>
-</div>
-</section>
+<section id="contacto" class="contact"><div class="wrap">
+  <div class="glass rv">
+    <span class="tag">Contacto</span>
+    <h2>Pronto para ter o seu site?</h2>
+    <p class="lead" style="margin:0 auto">Toque e fale connosco no WhatsApp. Resposta rápida.</p>
+    <div class="nums">
+      <a href="https://wa.me/244929966303?text=Ol%C3%A1%20Ar%C3%A3o%2C%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener"><div><b>929 966 303</b><span>Arão Lende</span></div><span>WhatsApp →</span></a>
+      <a href="https://wa.me/244930215974?text=Ol%C3%A1%20Hamilton%2C%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener"><div><b>930 215 974</b><span>Hamilton</span></div><span>WhatsApp →</span></a>
+    </div>
+  </div>
+</div></section>
+</main>
 
-<footer style="padding:24px;max-width:1160px;width:100%;box-sizing:border-box;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;font-size:14px;color:#52627A">
-<span>Arão Lende · Criação de sites</span>
-<span>Angola</span>
-</footer>
+<footer>ARÃO LENDE · WEBDESIGN · LUANDA, ANGOLA</footer>
 
-</div>
+<a class="fab" href="https://wa.me/244929966303?text=Ol%C3%A1%20Ar%C3%A3o%2C%20quero%20um%20or%C3%A7amento%20para%20o%20meu%20site." target="_blank" rel="noopener" aria-label="WhatsApp">💬 WhatsApp</a>
+
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);var c=e.target.querySelector('.cnt');if(c&&!rm)count(c)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+function count(el){var to=+el.dataset.to,t0=performance.now();(function f(t){var p=Math.min((t-t0)/1100,1),v=Math.round(to*(1-Math.pow(1-p,3)));el.textContent=v.toLocaleString('pt-PT').replace(/\s|,/g,'.');if(p<1)requestAnimationFrame(f)})(t0)}
+var txt='a minha empresa em Luanda',i=0,ty=document.getElementById('typed'),nr=document.getElementById('nores');
+function type(){if(rm){ty.textContent=txt;nr.classList.add('on');return}
+ if(i<=txt.length){ty.textContent=txt.slice(0,i++);setTimeout(type,70)}else setTimeout(function(){nr.classList.add('on')},500)}
+setTimeout(type,600);
+var bar=document.getElementById('bar');
+addEventListener('scroll',function(){var h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+var orbs=[].slice.call(document.querySelectorAll('.orb')),px=0,py=0;
+function mv(x,y){px=(x/innerWidth-.5);py=(y/innerHeight-.5);up()}
+function up(){if(rm)return;var sy=scrollY*.08;orbs.forEach(function(o){var s=+o.dataset.s;o.style.transform='translate('+(px*s*3)+'px,'+(py*s*3-sy*(s>0?1:-.6))+'px)'})}
+addEventListener('pointermove',function(e){mv(e.clientX,e.clientY)},{passive:true});
+addEventListener('touchmove',function(e){var t=e.touches[0];mv(t.clientX,t.clientY)},{passive:true});
+addEventListener('scroll',up,{passive:true});
+document.querySelectorAll('.glass').forEach(function(c){
+ function move(x,y){var r=c.getBoundingClientRect(),a=(x-r.left)/r.width,b=(y-r.top)/r.height;c.style.setProperty('--mx',a*100+'%');c.style.setProperty('--my',b*100+'%');c.classList.add('touch');
+  if(c.classList.contains('tilt')&&!rm)c.style.transform='perspective(700px) rotateX('+((.5-b)*10)+'deg) rotateY('+((a-.5)*10)+'deg) scale(1.02)'}
+ function end(){c.classList.remove('touch');if(c.classList.contains('tilt'))c.style.transform=''}
+ c.addEventListener('pointermove',function(e){move(e.clientX,e.clientY)});
+ c.addEventListener('pointerdown',function(e){move(e.clientX,e.clientY)});
+ c.addEventListener('pointerleave',end);c.addEventListener('pointerup',function(){setTimeout(end,250)});c.addEventListener('pointercancel',end);
+});
+document.querySelectorAll('.btn,.nums a,.fab').forEach(function(b){b.addEventListener('pointerdown',function(e){if(rm)return;var r=b.getBoundingClientRect(),s=Math.max(r.width,r.height),d=document.createElement('span');d.className='ripple';d.style.cssText='width:'+s+'px;height:'+s+'px;left:'+(e.clientX-r.left-s/2)+'px;top:'+(e.clientY-r.top-s/2)+'px';if(getComputedStyle(b).position==='static')b.style.position='relative';b.style.overflow='hidden';b.appendChild(d);setTimeout(function(){d.remove()},650)})});
+})();
+</script>
 </body>
   </html>
